@@ -315,7 +315,7 @@ public class MainActivity extends AppCompatActivity {
 
             String sigAlg = terminalCert.getSigAlgName();
             if (sigAlg == null) {
-                throw new IllegalStateException("ERROR: Could not determine signature algorithm for terminal certificate " + terminalCert.getHolderReference().getName());
+                throw new IllegalStateException("ERROR: Could Could not determine signature algorithm for terminal certificate " + terminalCert.getHolderReference().getName());
             }
             Signature sig = Signature.getInstance(sigAlg);
             sig.initSign(terminalKey);
